@@ -7,7 +7,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  deployments: write
+  contents: read
+  pages: write
+  id-token: write  # 确保有此权限
 
 jobs:
   build:
