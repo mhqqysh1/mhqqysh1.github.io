@@ -1,0 +1,392 @@
+body {
+  color: #555;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  left: 110px; 
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  top: 40px;
+  left: 115px;
+  margin: 0;
+  padding: 0;
+}
+
+#eyelogo {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0px #000;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-top: 30px;
+  color: #820000;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #820000;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #820000;
+}
+
+h5 {
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+  color: white;
+}
+
+a {
+  color: #005580;
+}
+
+header {
+}
+
+#headerdiv {
+  position: relative;
+  height: 277px;
+  background-image: url(http://vision.stanford.edu/header3.jpeg);
+}
+
+#header-title {
+  position: relative;
+}
+
+#groupphoto {
+  margin-top: 20px;
+}
+#groupphoto img{
+  border-radius: 10px;
+}
+
+#navigation {
+  line-height: 80px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  position: absolute;
+  bottom: 0px;
+  right: 25px;
+  width: 500px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+nav ul {  
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  
+}
+
+nav a {
+  color: black;
+  padding: 15px;
+}
+
+nav .active {
+  background-color: #DEF;
+  border-radius: 5px;
+}
+
+#snapsdiv {
+  background-color: #333;
+}
+
+.container-img {
+  background-color: #BBB59B;
+  background-color: #E6E4DB;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#group_picture {
+  float: right;
+  width: 550px;
+  margin-left: 20px;
+  /* box-shadow: 0 0 3px 0px #000; */
+}
+
+#myCarousel {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px -3px #000;
+  background-color: white;
+}
+
+.carousel {
+  margin-bottom: 0px;
+}
+.carousel-control.left {
+  left: -70px;
+}
+.carousel-control.right {
+  right: -70px;
+}
+.carousel-indicators {
+  top: auto;
+  bottom: -30px;
+  right: auto;
+  left: 50%;
+  margin-left: -10px;
+}
+
+/*
+.container-footer {
+  background-color: #8C1616;
+  height: 300px;
+  margin-top: 300px;
+  color: white;
+}
+footer {
+  padding-top: 140px;
+  text-align: center;
+}
+*/
+footer {
+  height: 400px;
+}
+
+.footy {
+  text-align: center;
+  border-top: 1px solid #AAA;
+  box-shadow: 0 0 10px 0px #EEE;
+  margin-top: 200px;
+}
+.footy img {
+  
+}
+
+p {
+  text-align: justify;
+}
+hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
+hr.brown {background: #D0A760; color: #D0A760; border: none; height: 1px; margin: 0; padding: 0;} 
+hr.gold {background: #E7D19A; color: #E7D19A; border: none; height: 1px; margin: 0; padding: 0;} 
+hr.red {background: #820000; color: #820000; border: none; height: 1px; margin: 0; padding: 0;} 
+hr.dark {background: #B2B0A8; color: #B2B0A8; border: none; height: 1px; margin: 0; padding: 0;} 
+
+.faculty {
+  height: 210px;
+  padding: 5px;
+  margin: 5px;
+  width:700px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+.facimg {
+  height: 205px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 15px;
+}
+.facimg2 {
+  width: 158px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 15px;
+}
+
+/*
+.member {
+  margin: 5px;
+  width: 220px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  color: #555;
+}
+.member img {
+  width: 220px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-right: 15px;
+  box-shadow: 0 0 6px -1px #000;
+}
+.member .bio {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+*/
+
+.member {
+  color: #555;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 210px;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+}
+.member img{
+  height: 150px;
+  border-radius: 100px;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 7px 0px #AAA;
+}
+
+.btw {
+  width: 100%;
+  text-align: center;
+}
+.btags {
+  color: #700;
+  background-color: #FDD;
+  border: 1px solid #ECC;
+  margin: 3px;
+  display: inline-block;
+  padding: 2px 5px 2px 5px;
+}
+
+.btags2 {
+  color: #070;
+  background-color: #DFD;
+  border: 1px solid #CEC;
+  margin: 3px;
+  display: inline-block;
+  padding: 2px 5px 2px 5px;
+}
+
+#facultywrap {
+  /* background-color: #E6E4DB; */
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#facultywrap2 {
+  /* background-color: #E6E4DB; */
+  padding-top: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E2E0D8;
+}
+
+.newsitem {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #E2E0D8;
+  overflow: hidden;
+}
+
+.newsdate {
+  font-weight: bold;
+  display: inline;
+}
+.newstext {  
+  display: inline;
+}
+
+.lightbck {
+  background-color: #F6F4EB;
+}
+
+.highlight {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-right: 35px;
+}
+.highlight img {
+  height: 70px;
+  margin-bottom: 5px;
+}
+
+.hcell {  
+  margin: 5px;
+  padding: 5px;
+  height: 90px;
+}
+.hdesc {
+}
+.icon-eye-open {
+  font-size: 80px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.alum {
+  border-left: 6px solid #DDD;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.aname {
+  display: inline-block;
+  width: 200px;
+}
+.adate {
+  display: inline-block;
+  width: 170px;
+}
+.anow {
+  display: inline-block;
+  width: 300px;
+}
+
+#togglehide {
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0px #AAA;
+}
+#togglehide:hover{
+  box-shadow: 0 0 10px 0px #AAA; 
+}
+
+.course {
+  box-shadow: 0 0 5px -2px #000;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+}
+.coursetable td{
+  padding: 5px;
+}
+
+.oldpaper {
+  font-size: 12px;
+  border-bottom: 1px solid #EEE;
+}
+
