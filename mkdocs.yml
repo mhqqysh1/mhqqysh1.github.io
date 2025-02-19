@@ -1,8 +1,9 @@
 site_name: ZJUI-MATH285 文件汇总
 site_author: YSH
 repo_name: MATH285 文件汇总
-repo_url: https://github.com/mhqqysh1/mhqqysh1.github.io
-edit_uri: edit/main/
+# repo_url: https://github.com/mhqqysh1/mhqqysh1.github.io
+# edit_uri: edit/main/
+site_url: https://mhqqysh1.github.io/
 
 copyright: Copyright &copy; 2025 <a href="https://github.com/mhqqysh1/mhqqysh1.github.io" target="_blank" rel="noopener noreferrer">
   mhqqysh1.github.io</a>.
