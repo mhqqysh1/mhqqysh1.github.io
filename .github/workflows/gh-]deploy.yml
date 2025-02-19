@@ -2,10 +2,10 @@ name: Deploy MkDocs
 on:
   push:
     branches: 
-      - master  # 或者是 main，取决于您的默认分支名称
+      - main  # 或者是 main，取决于您的默认分支名称
   pull_request:
     branches:
-      - master
+      - main
 
 permissions:
   contents: write
@@ -32,3 +32,4 @@ jobs:
       - name: Build and deploy
         run: |
           poetry run mkdocs gh-deploy --force
+          
