@@ -14,7 +14,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    if: github.repository == 'MHQQysh/mhqqysh3.github.io'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -31,26 +31,25 @@ jobs:
       - name: Update dir and build
         run: python3 .github/scripts/build.py
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: static-site
-          path: ./output  # 假设你的构建输出目录是 ./output
+
+
+
+
+
+
+      # - name: Upload Artifact
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: static-site
+      #     path: ./output  # 假设你的构建输出目录是 ./output
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: static-site
-          path: ./site
-
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v3
-        with:
-          folder: ./site
+        id: deployment
+        uses: actions/deploy-pages@v4
