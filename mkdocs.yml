@@ -17,6 +17,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+
+
 extra_css:
   - assets/css/extra.css
 
