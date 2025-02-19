@@ -1,0 +1,56 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+  pages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+          cache: pip
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update dir and build
+        run: python3 .github/scripts/build.py
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-site
+          path: ./output  # 假设你的构建输出目录是 ./output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: static-site
+          path: ./site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v3
+        with:
+          folder: ./site
